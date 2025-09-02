@@ -78,13 +78,13 @@ export default function Home() {
     name: "NICOLA BIGONI",
     title: "Music-Oriented Software Engineer",
     aboutMe: "I'm a highly capable and versatile professional with dual Italian and Brazilian citizenship. My strong music background as Music Director, artist and producer well complements my academic percourse in Informatics, defining a strong figure in the area of musical informatics, DSP and audio engineering.",
-    expandedAboutMe: "I'm a passionate front-end developer and UX designer. I love creating interactive and engaging user experiences. My skills in React, coupled with a deep understanding of user-centered design, allow me to build applications that are not only functional but also a pleasure to use. I'm always looking for new challenges to demonstrate my abilities.",
+    expandedAboutMe: "I'm a passionate front-end developer and UX designer. I love creating interactive and engaging user experiences. My skills in React, coupled with a deep understanding of user-centered design, allow me to build applications that are not only functional but also a pleasure to use. I'm always looking for new challenges to demonstrate my abilities, personally learning new stuff, like Next.js wich I used for this page.",
     contact: {
       phone: "+(39) 389 871 7057",
       email: "nicola2000bigoni@gmail.com",
       location: "Via A. Locatelli, 24, Ardesio (BG) - Italy",
     },
-    devSkills: ["JS", "C++", "Python", "node.js", "React", "Typescript", "JUCE", "MySQL", "MongoDB", "Docker", "Kubernetes"],
+    devSkills: ["JS", "C++", "Python", "node.js", "React", "Typescript", "JUCE", "MySQL", "MongoDB", "Docker", "Kubernetes", "Next.js (learning)", "Tailwind (learning)"],
     languages: ["Italian (Native)", "Portuguese (Native)", "English (B2)"],
     education: [
       {
@@ -185,7 +185,7 @@ export default function Home() {
             {/* Sostituisci l'URL con la tua immagine */}
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-green-500 shadow-xl transition-transform duration-500 hover:scale-105">
               <img
-                src="/images/nicola-bigoni.jpg"
+                src="/nicola-bigoni.jpg"
                 alt="Nicola Bigoni"
                 width={160}
                 height={160}
@@ -258,7 +258,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-green-400 mb-6">Music Experience & Courses</h2>
           <Timeline items={personalData.musicExperience} />
         </section>
-      </main>
+      </main>{/* Footer */}
+      <footer className="mt-12 py-6 text-center text-gray-400 border-t border-gray-700">
+        <p>&copy; {new Date().getFullYear()} Nicola Bigoni. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
