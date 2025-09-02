@@ -76,34 +76,56 @@ export default function Home() {
 
   const personalData = {
     name: "NICOLA BIGONI",
-    title: "Software Developer & Musician",
-    aboutMe: "Nicola Bigoni is a highly capable and versatile professional with dual Italian and Brazilian citizenship. The strong music background as Music Director, artist and producer well complements his academic percourse in Informatics, creating a strong figure in the area of musical informatics, DSP and audio engineering.",
+    title: "Music-Oriented Software Engineer",
+    aboutMe: "I'm a highly capable and versatile professional with dual Italian and Brazilian citizenship. My strong music background as Music Director, artist and producer well complements my academic percourse in Informatics, defining a strong figure in the area of musical informatics, DSP and audio engineering.",
     expandedAboutMe: "I'm a passionate front-end developer and UX designer. I love creating interactive and engaging user experiences. My skills in React, coupled with a deep understanding of user-centered design, allow me to build applications that are not only functional but also a pleasure to use. I'm always looking for new challenges to demonstrate my abilities.",
     contact: {
       phone: "+(39) 389 871 7057",
       email: "nicola2000bigoni@gmail.com",
-      location: "Via A. Locatelli, 24, Ardesio (BG)",
+      location: "Via A. Locatelli, 24, Ardesio (BG) - Italy",
     },
-    devSkills: ["JS", "C++", "Python", "node.js", "React", "JUCE", "MySQL", "MongoDB", "Kubernetes"],
-    languages: ["Italian (Mother tongue)", "Portuguese (Mother tongue)", "English (B2)"],
+    devSkills: ["JS", "C++", "Python", "node.js", "React", "Typescript", "JUCE", "MySQL", "MongoDB", "Docker", "Kubernetes"],
+    languages: ["Italian (Native)", "Portuguese (Native)", "English (B2)"],
     education: [
       {
         years: "2014-2019",
         title: "Information and Technology Diploma",
         subtitle: "ISTITUTO VALLE SERIANA | 100/100",
-        details: [],
+        details: [
+          "Basic web development",
+          "Database management",
+          "Network fundamentals"
+        ],
       },
       {
         years: "2017-2021",
-        title: "Pre - Academic course",
+        title: "Pre - Academic Course (Composition)",
         subtitle: "CONSERVATORY OF BERGAMO",
-        details: [],
+        details: [
+          "Music Theory",
+          "Harmony",
+          "Ear Training",
+          "Piano",
+          "Sight Singing & Reading",
+          "Solfeggio"
+        ],
       },
       {
         years: "2019-2023",
         title: "Bachelor's Degree in Information and Music Computing",
         subtitle: "UNIVERSITY OF MILAN | 101/110",
-        details: [],
+        details: [
+          "Audio Programming",
+          "Digital Signal Processing",
+          "Machine Learning",
+          "Software Engineering",
+          "Copyright Law and Music Economics",
+          "Technology for Music Perception",
+          "MIDI and Music Programming",
+          "Musescore (Music Notation & Plugins)",
+          "Music Information Retrieval",
+          "VST Development in JUCE"
+        ],
       },
     ],
     experience: [
@@ -113,7 +135,9 @@ export default function Home() {
         subtitle: "Fornoni Soluzioni Informatiche",
         details: [
           "Tech support",
-          "Create and manages websites"
+          "Create and manages websites using WordPress and Joomla",
+          "Database management with MySQL and PostgreSQL",
+          "Backup and restore procedures for clients' servers",
         ],
       },
       {
@@ -122,7 +146,30 @@ export default function Home() {
         subtitle: "Increso S.r.l.",
         details: [
           "Frontend and Backend development using node.js, MongoDB and React.js",
+          "Pipeline CI/CD with Docker and Kubernetes",
           "Small DevOps tasks like managing releases and testing environments"
+        ],
+      },
+    ],
+    musicExperience: [
+      {
+        years: "2018 - Present",
+        title: "Music Director, Artist & Producer",
+        subtitle: "Freelance",
+        details: [
+          "Composition, arrangement, and production of original music.",
+          "Directed musical performances and managed sound engineering.",
+          "Collaborated with various artists on recording and live projects."
+        ],
+      },
+      {
+        years: "2024-2025",
+        title: "International Wind Band Conducting Course",
+        subtitle: "Club Culturale Musica Viva",
+        details: [
+          "Conducting techniques for wind bands",
+          "Score reading and interpretation",
+          "Rehearsal strategies and leadership skills"
         ],
       },
     ]
@@ -138,7 +185,7 @@ export default function Home() {
             {/* Sostituisci l'URL con la tua immagine */}
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-green-500 shadow-xl transition-transform duration-500 hover:scale-105">
               <img
-                src="https://placehold.co/160x160/22c55e/ffffff?text=NB" 
+                src="/images/nicola-bigoni.jpg"
                 alt="Nicola Bigoni"
                 width={160}
                 height={160}
@@ -204,6 +251,12 @@ export default function Home() {
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-green-400 mb-6">Education</h2>
           <Timeline items={personalData.education} />
+        </section>
+
+        {/* Esperienza e corsi musicali */}
+        <section className="mb-12">
+          <h2 className="text-3xl font-bold text-green-400 mb-6">Music Experience & Courses</h2>
+          <Timeline items={personalData.musicExperience} />
         </section>
       </main>
     </div>
