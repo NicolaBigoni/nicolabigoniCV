@@ -78,7 +78,7 @@ export default function Home() {
     name: "NICOLA BIGONI",
     title: "Music-Oriented Software Engineer",
     aboutMe: "I'm a highly capable and versatile professional with dual Italian and Brazilian citizenship. My strong music background as Music Director, artist and producer well complements my academic percourse in Informatics, defining a strong figure in the area of musical informatics, DSP and audio engineering.",
-    expandedAboutMe: "I'm a passionate developer. I love swithing between languages, from C++ to Python to Javascript and Typescript and Go.",
+    expandedAboutMe: "I'm a passionate developer. My dream position would be one where i can blend my passions for music and coding. I'm very flexible on languages and types of work",
     contact: {
       phone: "+(39) 389 871 7057",
       email: "nicola2000bigoni@gmail.com",
@@ -147,7 +147,9 @@ export default function Home() {
         details: [
           "Frontend and Backend development using node.js, MongoDB and React.js",
           "Pipeline CI/CD with Docker and Kubernetes",
-          "Small DevOps tasks like managing releases and testing environments"
+          "Small DevOps tasks like managing releases and testing environments",
+          "Audio Optimization on vocal agents",
+          "SIP protocol and WEBrtc"
         ],
       },
     ],
