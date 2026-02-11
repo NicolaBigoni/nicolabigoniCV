@@ -78,7 +78,7 @@ export default function Home() {
     name: "NICOLA BIGONI",
     title: "Music-Oriented Software Engineer",
     aboutMe: "I'm a highly capable and versatile professional with dual Italian and Brazilian citizenship. My strong music background as Music Director, artist and producer well complements my academic percourse in Informatics, defining a strong figure in the area of musical informatics, DSP and audio engineering.",
-    expandedAboutMe: "I'm a passionate front-end developer and UX designer. I love creating interactive and engaging user experiences. My skills in React, coupled with a deep understanding of user-centered design, allow me to build applications that are not only functional but also a pleasure to use. I'm always looking for new challenges to demonstrate my abilities, personally learning new stuff, like Next.js wich I used for this page.",
+    expandedAboutMe: "I'm a passionate developer. I love swithing between languages, from C++ to Python to Javascript and Typescript and Go.",
     contact: {
       phone: "+(39) 389 871 7057",
       email: "nicola2000bigoni@gmail.com",
